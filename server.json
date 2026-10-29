@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pipeworx-io/virgin-islands-code",
   "title": "Virgin Islands Code",
-  "description": "Virgin Islands Code (V.I.C.) — US Virgin Islands statutes, 2026 edition:",
-  "version": "0.1.0",
+  "description": "Virgin Islands Code (V.I.C.) — US Virgin Islands statutes, 2026 edition: full section text by…",
+  "version": "0.2.0",
   "websiteUrl": "https://pipeworx.io/packs/virgin-islands-code",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-virgin-islands-code",

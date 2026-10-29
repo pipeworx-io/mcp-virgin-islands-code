@@ -1,0 +1,51 @@
+[
+  {
+    "name": "vi_statute",
+    "description": "Get the FULL TEXT of a section of the Virgin Islands Code (V.I.C., US Virgin Islands statutes, 2026 edition) by citation, e.g. \"14 V.I.C. § 922\" (first and second degree murder) or \"11A V.I.C. § 2-201\" (UCC statute of frauds). Accepts \"14 V.I.C. § 922\", \"14 VIC 922\", \"V.I. Code Ann. tit. 14, § 922\" or \"Title 14, Section 922\". Returns the statutory text, the heading, and the \"History:\" amendment line. Source: USVI Public Records, Virgin Islands Code 2026 edition. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "citation": {
+          "type": "string",
+          "description": "Citation as \"<title> V.I.C. § <section>\", e.g. \"14 V.I.C. § 922\" or \"11A V.I.C. § 2-201\"."
+        }
+      },
+      "required": [
+        "citation"
+      ]
+    }
+  },
+  {
+    "name": "vi_search",
+    "description": "Search ONE title of the Virgin Islands Code (US Virgin Islands statutes) by keyword — every word must appear in a section's heading or text — e.g. title \"14\" (Crimes) + \"murder\", or title \"28\" (Property) + \"landlord\". Returns matching citations, headings and a text snippet; heading matches list first. Call vi_titles to choose the title. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Title number, e.g. \"14\" (Crimes), \"28\" (Property), \"11A\" (Uniform Commercial Code)."
+        },
+        "query": {
+          "type": "string",
+          "description": "Keyword(s); all must match, e.g. \"murder\" or \"security deposit\"."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max results, default 10, max 50."
+        }
+      },
+      "required": [
+        "title",
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "vi_titles",
+    "description": "List all 37 titles of the Virgin Islands Code (US Virgin Islands statutes, 2026 edition) with official names and section counts, e.g. Title 14 is Crimes, Title 11A the Uniform Commercial Code. Use it to route a subject to a title before vi_search. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  }
+]

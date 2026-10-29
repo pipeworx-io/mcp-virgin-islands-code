@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-virgin-islands-code",
-  "version": "0.1.0",
-  "description": "Virgin Islands Code (V.I.C.) — US Virgin Islands statutes, 2026 edition:",
+  "version": "0.2.0",
+  "description": "Virgin Islands Code (V.I.C.) — US Virgin Islands statutes, 2026 edition: full section text by citation, keyword search within a title, and the list of titles.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-virgin-islands-code": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "virgin-islands-code"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-virgin-islands-code.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/virgin-islands-code",
   "pipeworx": {
-    "sourceHash": "v1-a2b3a298c3783c1c31c4e268f1cdf129c5692d188112ba9a493e57a97ca6fd43",
-    "sourceCommit": "99f8642edbc00b72eee520fc7832dd864cf5ddfd"
+    "mode": "gateway",
+    "slug": "virgin-islands-code",
+    "gatewaySlug": "virgin-islands-code",
+    "sourceHash": "v1-6327dc55ab2350a5ea63fb36bc68c67d9fa1ae639bd62f5157764a4b003b0fa0",
+    "sourceCommit": "98853f34516646cb7c4c1460f09249b262c0269e"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-virgin-islands-code",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Virgin Islands Code (V.I.C.) — US Virgin Islands statutes, 2026 edition: full section text by citation, keyword search within a title, and the list of titles.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "virgin-islands-code",
     "gatewaySlug": "virgin-islands-code",
-    "sourceHash": "v1-6327dc55ab2350a5ea63fb36bc68c67d9fa1ae639bd62f5157764a4b003b0fa0",
-    "sourceCommit": "98853f34516646cb7c4c1460f09249b262c0269e"
+    "sourceHash": "v1-fcf3027244f67ef6603ddc965daf669a3d31dfbce7df37c80db95ecfb2ccaee6",
+    "sourceCommit": "ca52e7ed1e1ccad897c2da1b0fa105edc0bc3b2e"
   }
 }
